@@ -12,7 +12,7 @@ Docker creates a neat wrapper around these two apps to make them appear as one.
 
 ## Quick Start
 
-- Go to https://gitlab.com/CS-499/uah-fee-calc/-/releases and pick the latest version. (For this guide, 1.0.0 is used). 
+- Go to release and pick the latest version. (For this guide, 1.0.0 is used). 
 
 - Download the Source Code `tar.gz` version.
 Below is a sample command that downloads the project from the copied source code link on the releases page.
