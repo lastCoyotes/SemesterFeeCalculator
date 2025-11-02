@@ -1,4 +1,4 @@
-# UAH Fee Calculator
+# Semester Fee Calculator
 
 This project is meant for calculating fees for UAH courses.
 
