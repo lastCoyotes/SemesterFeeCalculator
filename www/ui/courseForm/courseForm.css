@@ -1,0 +1,50 @@
+@import url("/lib/bootstrap.min.css");
+@import url("/index.css");
+
+.courseFormRow {
+    align-items: flex-end;
+    margin-top: 2% !important;
+    width: 100%;
+}
+ 
+.courseTable {
+    --bs-table-border-color: var(--uah-white) !important;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%
+}
+
+/* Header Row */
+.courseTable > tr[data-row="0"] > th {
+    color: var(--uah-white);
+    background-color: var(--uah-blue);
+    border-left: 1px solid var(--uah-white);
+    border-right: 1px solid var(--uah-white);
+    box-shadow: 0px 2px var(--uah-warm-gray);
+}
+
+.courseTable > tr {
+    border-bottom: 1px solid var(--uah-cool-gray);
+}
+
+th, td {
+    text-align: center;
+}
+
+
+input[type="text"],input[type="number"]{
+    background-color: var(--uah-white);
+    color: var(--uah-black);
+    border: 1px solid var(--uah-cool-gray);
+    border-radius: 0.150rem;
+    text-align: right;
+    /* Height = 2*font height */
+    width: 4em;
+    height: 2em;
+    margin: 1%
+}
+
+.rmButton {
+    font-weight: bold;
+}

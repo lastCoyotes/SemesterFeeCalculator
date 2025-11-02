@@ -1,0 +1,10 @@
+/*
+ * Unlike other CSS files in this directory,
+ * this file follows styles on the website uah.edu, rather than importing an external library.
+ */
+
+ .btn-primary {
+    color: #ffffff;
+    background-color: #0077c8;
+    border-color: #357ebd;
+ }

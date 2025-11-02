@@ -1,0 +1,18 @@
+# Docker project spec for deployment
+# Hosts an api and a web-server
+version: "3.0"
+services:
+  # API Server, built locally before deployment
+  api:
+    build: ..
+    deploy:
+      replicas: 1
+    volumes:
+      - ../api/UAHFeeSchedule.xlsx:/srv/uah-fee-calc/UAHFeeSchedule.xlsx
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ../www/:/srv/www

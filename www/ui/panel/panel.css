@@ -1,0 +1,23 @@
+/*@import url("/ui/courseForm/courseForm.css");
+*/
+
+.collapse {
+    border: 1px solid var(--uah-cool-gray);
+}
+
+.collapseHeader{
+    background-color: var(--uah-light-gray);
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapseToggle{
+    font-weight: bolder;
+    font-size: 20pt;
+}
+ 
+/*
+.collapseBody {}
+*/

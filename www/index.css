@@ -1,0 +1,119 @@
+/* See branding page for guidelines: https://www.uah.edu/omc/resources/brand  */
+:root {
+    /* 
+        This is the color palette.
+        Use variables for specific placement of these colors  
+    */
+    /* Primary Colors  */
+        --uah-blue: #0077C8;
+        --uah-white: #f1f1f1;
+        --uah-black: #000;
+    /* Secondary Colors */
+        --uah-cyan: #009FDF;
+        --uah-accent-yellow: #FDDA24;
+        --uah-warm-gray: #BBB1A7;
+        --uah-cool-gray: #757575;
+        --uah-light-gray: #E5E5E5;
+    /* End Color Palette */
+        --uah-free-font-family: Arial;
+        --uah-alt-free-font-family: Helvetica;
+
+    /* Bootstrap vars */
+        font-size: 14pt;
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    /*--uah-free-font-family: Arial;*/
+    font-size: 300%;
+    text-align: center;
+    /*
+    background-color: lightblue;
+    */
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+body{
+    height: 97vh;
+    width: 98vw;
+}
+/*.button {
+  background-color: var(--uah-blue);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}*/
+.contentBody{
+
+  background-color: var(--uah-light-gray);
+  height: 70%;
+  min-height: 70%;
+  height: fit-content;
+  width: 58.8%;
+  border: 5px solid var(--uah-blue);
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .contentBody {
+        width: 100%;
+        padding: 0%;
+    }
+}
+
+combo-box {
+  display: block;
+  min-width: 50%;
+}
+
+
+th, td {
+    text-align: center !important;
+}
+
+/* Header Row */
+
+.feeSchedule > tr[data-row="0"] > th {
+    color: var(--uah-white);
+    background-color: var(--uah-blue);
+    border-left: 1px solid var(--uah-white);
+    border-right: 1px solid var(--uah-white);
+    box-shadow: 0px 2px var(--uah-warm-gray);
+}
+.feeSchedule > tr[data-row="0"] > th:first-child {
+    border-left: 1px solid black;
+}
+.feeSchedule > tr[data-row="0"] > th:last-child {
+    border-right: 1px solid black;
+}
+
+.feeSchedule > tr {
+    border-bottom: 1px solid var(--uah-cool-gray);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.feeSchedule > tr > td {
+    border-bottom: 1px solid var(--uah-cool-gray);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.GrandTotal {
+    display: inline-block;
+    width: fit-content;
+    background-color: var(--uah-white);
+    margin: 0% 0%;
+    padding: 0% 1%;
+    border: 1px solid var(--uah-black);
+}

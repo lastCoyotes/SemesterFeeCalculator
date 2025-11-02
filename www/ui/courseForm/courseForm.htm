@@ -1,0 +1,86 @@
+<!--The raw HTML Template for the input section of the GUI -->
+<div class="courseForm container">
+    <!-- First Row, Selecting a course -->
+    <div class="row courseFormRow">
+        <!-- First Column  -->
+        <div class="col-md-4">
+            <label for="course">Select Department:</label>
+            <!--Use a custom dropdown, the elements here get replaced by the departments in tbe API -->
+            <combo-box id="dept" >
+                <li class="dropdown-item" data-value="default">--</li>
+                <li class="dropdown-item" data-value="ars">ARS</li>
+                <li class="dropdown-item" data-value="cs">CS</li>
+                <li class="dropdown-item" data-value="cpe">CPE</li>
+                <li class="dropdown-item" data-value="eh">EH</li>
+                <li class="dropdown-item" data-value="nur">NUR</li>
+            </combo-box>
+        </div>   
+        <!-- Choose an Individual Course -->
+        <div class="col-md-4">
+            <label for="class">Select Course:</label>
+            <combo-box name="classes" id="classDropDown" disabled="true"></combo-box>
+        </div>
+
+        <!-- Credit Hours text field-->
+        <div class="col-md-2">
+            <label style="display: block;" for="hours">Credit Hours:</label>
+            <input is="number-picker" type="number" id="creditHourTextBox" name="hours" style="width:50%" value="0" />
+        </div>
+        <div class="col-md-2">
+            <label></label>
+            <button class="btn btn-sm btn-primary" id="addCourseBtn">Add Course</button>
+        </div>
+    
+    </div>
+    <div class="row">
+        <table id="CourseTable" class="table table-striped courseTable"></table>
+    </div>
+
+    <br/>
+    <!-- Semester and One-Time Fees -->
+
+    <div class="row">
+       <collapse-panel id="SemesterPanel">
+        <div slot="header">
+            <h3>Semesterly Fees</h3>
+            <span for="SemesterTotal">Current Total:</span>
+            <span id="SemesterTotal" class="SemesterTotal">$0</span>
+        </div>
+        <div slot="body" class="container">
+            <span>The following fees are typically charged no more than once per semester. 
+                Select how many times each fee should occur.
+            </span>
+            <table id="SemesterFeeTable" class="table courseTable"></table>
+        </div>
+       </collapse-panel>            
+    </div>        
+    <br/>
+    <div class="row">
+        <collapse-panel id="OneTimePanel">
+         <div slot="header">
+             <h3>One-Time Fees</h3>
+             <span>Current Total:</span>
+             <span id="OneTimeTotal" class="OneTimeTotal">$0</span>
+         </div>
+         <div slot="body" class="container">
+             <span>The following fees are charged only under special conditions or once per multiple years.</span>
+             <table id="OneTimeFeeTable" class="table courseTable"></table>
+         </div>
+        </collapse-panel>            
+     </div>    
+
+    <div class="row courseFormRow">
+        <!--submit button for the class data-->
+        <div class="col-md-4"></div>
+        <button id="submit" class="btn btn-primary col-sm-4 courseFormSubmit">Submit</button>
+        <div class="col-md-4"></div>
+    </div>
+    
+
+</div>
+    
+
+    
+    
+
+</div>
